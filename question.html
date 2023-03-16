@@ -127,6 +127,25 @@
                 are no tasks in the task queue until one is created.
             </p>
         </div>
+        <div>
+            <h2 class="text-md text-gray-800 text-center">Q=>(4).
+                What is the main thought of QuizeTimer() function?
+            </h2>
+            <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
+                The argument to the quizTimer function is a boolean parameter named dismiss. The goal of this function
+                is to start or stop a timer that keeps track of the passing seconds, refreshes the webpage's count
+                display every second, and switches the count display's color every 60 seconds.
+
+                If dismiss is true, the method uses clearInterval(timer) to reset the timer and doesn't return anything.
+                The timer will stop ticking if you do this.
+
+
+                Using setInterval(), the code creates a timer that runs a callback function every 1000 milliseconds if
+                dismiss is false (or not specified) (1 second). The callback function increments the count by 1 and
+                refreshes the count display on the webpage every 60 seconds. It also changes the color of the count
+                display.
+            </p>
+        </div>
     </section>
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">
