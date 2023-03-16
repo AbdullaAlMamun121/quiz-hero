@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Quiz Hero</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./index.js" defer></script>
@@ -25,53 +21,60 @@
     <!-- You don't need to change noChange.js file. It's fine -->
 
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              common: ["Rubik", "sans-serif"],
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
             },
-          },
-        },
-      };
+        };
     </script>
-  </head>
-  <body class="bg-white font-common">
+</head>
+
+<body class="bg-white font-common">
     <!-- Header/Navbar section start -->
     <header class="h-16 flex items-center shadow-sm">
-      <nav class="flex justify-between items-center w-9/12 mx-auto">
-        <div class="text-zinc-800 font-bold uppercase">
-          <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
-          <p class="text-[10px] font-normal capitalize -mt-1">
-            Get ready to Quiz and be amazed!
-          </p>
-        </div>
-        <button
-          class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white"
-        >
-          <a href="index.html">Main page</a>
-        </button>
-      </nav>
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <button class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                <a href="index.html">Main page</a>
+            </button>
+        </nav>
     </header>
     <!-- Header/Navbar section end -->
 
     <!-- Landing page content start -->
-    <section
-      class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center"
-      id="rulesContainer"
-    >
-      <h1 class="text-center my-8 text-xl">Welcome to Quiz Hero</h1>
-      <div class="lg:w-[80%] md:w-[90%] w-[90%] mx-auto text-left">
-        <h1 class="text-md text-gray-800 text-center">Question and Answer:</h1>
-        <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
-          This section contain some valuable question and there answer.
-        </p>
-        <!-- Quiz rules start -->
-    
+    <section class="lg:w-9/12 md:w-[90%] w-[95%] mx-auto text-center">
+        <h1 class="text-center my-8 text-xl">Welcome to Quiz Hero</h1>
+        <div class="lg:w-[80%] md:w-[90%] w-[90%] mx-auto text-left">
+            <h1 class="text-md text-gray-800 text-center">Question and Answer:</h1>
+            <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
+                This section contain some valuable question and there answer.
+            </p>
+        </div>
+    </section>
+    <!-- question and answer section start -->
+    <section>
+      <div class="container">
+        <h2 class="text-md text-gray-800 text-center">Q=>(1). What are the difference between map(),filter(), forEach(), find() methods in js?</h2>
+        <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center"><span class="text-orange-800">Map():</span>The map() method calls a given function on each element of the original array, producing a new array with the results. The initial array is not changed.</p>
+        <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center"><span class="text-orange-800">Filter():</span>The filter() method builds a fresh array of all the components that pass the test carried out by the supplied function. The initial array is left alone.</p>
+        <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center"><span class="text-orange-800">forEach():</span>The forEach() method runs the supplied function once for each element of the array. It doesn't alter the initial array and doesn't produce a new array either.</p>
+        <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center"><span class="text-orange-800">Find():</span>The find() method returns the value of the array's first element that satisfies the given testing function. The old array is not changed, nor is a new array created.</p>
+      </div>
+    </section>
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">
-      Copyright © 2023 Quiz Hero All Rights Reserved.
+        Copyright © 2023 Quiz Hero All Rights Reserved.
     </footer>
     <!-- Footer section end -->
-  </body>
+</body>
+
 </html>
