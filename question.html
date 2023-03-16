@@ -61,7 +61,7 @@
         </div>
     </section>
     <!-- question and answer section start -->
-    <section class="container">
+    <section class="container mx-auto px-4">
         <div>
             <h2 class="text-md text-gray-800 text-center">Q=>(1). What are the difference between map(),filter(),
                 forEach(), find() methods in js?</h2>
@@ -81,7 +81,7 @@
                 created.</p>
         </div>
         <div>
-            <h2 class="text-md text-gray-800 text-center">Q=>(1). What are the difference between localStorage and
+            <h2 class="text-md text-gray-800 text-center">Q=>(2). What are the difference between localStorage and
                 sessionStorage in js?</h2>
             <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
                 Modern browsers offer two storage options that let site designers store data on the client-side:
@@ -92,10 +92,39 @@
 
                 localStorage: Data stored with localStorage is kept on the user's device even when the browser window is
                 closed. Any JavaScript script from the same domain is able to access it.
-                   
+
                 SessionStorage: Data stored in a session is only accessible during that particular session. The data is
                 thus only accessible while the browser window or tab is active. The data is lost if the user closes the
                 tab or window.
+            </p>
+        </div>
+        <div>
+            <h2 class="text-md text-gray-800 text-center">Q=>(3). What is event loop and
+                how does it's work in js?</h2>
+            <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
+                JavaScript's concurrency model relies on the event loop, a fundamental idea that gives JavaScript the
+                ability to handle asynchronous actions. In the JavaScript runtime, it is in charge of controlling how
+                code is executed and making sure that no code is running in the background at the same time as another.
+
+
+                Due to the fact that JavaScript is a single-threaded programming language, only one piece of code may be
+                run at once. Yet it also has an event-driven architecture, allowing it to react to timers, network
+                requests, and user interactions, among other events. The event loop controls how quickly the code
+                handling these events runs because it is handled asynchronously.
+
+                The JavaScript runtime's task queue and call stack are continuously inspected by the event loop.
+                The JavaScript runtime maintains a record of the execution of function calls in a data structure known
+                as the call stack. The top of the call stack is increased when a function is called, and it is
+                decremented when it returns.
+
+                A queue of jobs that must be carried out is kept in a data structure called the task queue. A job is
+                produced and added to the task queue whenever an event takes place, such as when a user clicks a button
+                or a network request is finished.
+
+                Checking the call stack and task queue continually is the function of the event loop.
+                The first task from the task queue is added to the call stack when it is empty, and the task's
+                associated code is then executed. The event loop keeps checking the call stack and task queue if there
+                are no tasks in the task queue until one is created.
             </p>
         </div>
     </section>
