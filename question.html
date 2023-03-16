@@ -146,6 +146,23 @@
                 display.
             </p>
         </div>
+        <div>
+            <h2 class="text-md text-gray-800 text-center">Q=>(5).
+                What is the main thought of chooseQuiz() function?
+            </h2>
+            <p class="text-xs italic mt-1 mb-4 text-orange-800 text-center">
+                The index and givenAns parameters are required for this function, chooseQuiz.
+
+                A quiz question's index can be found in the quizData array as the first parameter, and the user-selected
+                answer can be found in the second argument, givenAns.
+
+                The function first looks in the responses array for an object whose id property matches the id property
+                of the quiz question at the provided index in quizData. This is accomplished by utilizing the
+                Array.find() method, which yields the array's initial element that meets the given testing function. If
+                an item with the specified id property is discovered,
+                The function uses the Array.splice() method to replace the existing object with a new object created by spreading the properties of the quiz question at the specified index and adding the givenAns property. This indicates that the user has already answered this question, and it updates the existing answer object in the answers array with the new answer. The function pushes a new object to the answers array using the spread operator to create an object that contains all the properties of the quiz question at the specified index as well as the givenAns property if no object with a matching id property is found, indicating that the user is answering this question for the first time.
+            </p>
+        </div>
     </section>
     <!-- Footer section start -->
     <footer class="py-10 text-center text-sm">
